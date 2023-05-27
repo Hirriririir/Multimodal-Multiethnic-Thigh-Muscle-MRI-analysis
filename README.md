@@ -2,7 +2,7 @@
 A thigh muscle segmentation tool trained using a multimodal and multiethnic MRI dataset 
 
 ## Utilized MRI data 
-> You can download the Chinese and Finish data at the right "Release" section, and the Germany data from this [link](https://osf.io/svwa7/?view_only=c2c980c17b3a40fca35d088a3cdd83e2). 
+> You can download the Chinese and Finish data at the right "Releases" section, and the Germany data from this [link](https://osf.io/svwa7/?view_only=c2c980c17b3a40fca35d088a3cdd83e2). 
 - **Han Chinese Thigh MRIs** (HuashanMyo): 262 MRIs (LGMDR1, LGMDR2, BMD, DM1, Control)
 - **Finnish Thigh MRIs** ([Folkhälsan Research Center](https://www.folkhalsan.fi/en/knowledge/research/genetics/group-udd/)): 54 MRIs (TMD, IBM, DM2, HMERF)
 - **Germany Thigh MRIs** ([MyoSegmenTUM](https://dx.plos.org/10.1371/journal.pone.0198200)): 38 MRIs (DM2, LGMDR1, ALS, Control)
