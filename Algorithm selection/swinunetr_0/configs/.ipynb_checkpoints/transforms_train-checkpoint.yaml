@@ -1,0 +1,72 @@
+_meta_: {}
+image_key: image
+label_key: label
+transforms_train:
+  _target_: Compose
+  lazy_evaluation: $@transforms#lazy_resampling
+  override_keys: ['@image_key', '@label_key']
+  overrides:
+    dtype: $torch.float32
+    mode: [bilinear, nearest]
+    padding_mode: [border, border]
+  transforms:
+  - _target_: LoadImaged
+    image_only: true
+    keys: ['@image_key', '@label_key']
+  - _target_: EnsureChannelFirstd
+    keys: ['@image_key', '@label_key']
+  - {_target_: NormalizeIntensityd, channel_wise: true, keys: '@image_key', nonzero: true}
+  - _target_: Orientationd
+    axcodes: RAS
+    keys: ['@image_key', '@label_key']
+  - _target_: Spacingd
+    align_corners: [true, true]
+    keys: ['@image_key', '@label_key']
+    mode: [bilinear, nearest]
+    pixdim: $@transforms#resample_to_spacing
+  - _target_: CastToTyped
+    dtype: [$torch.float32, $torch.float32]
+    keys: ['@image_key', '@label_key']
+  - _target_: EnsureTyped
+    keys: ['@image_key', '@label_key']
+    track_meta: true
+  - _target_: SpatialPadd
+    keys: ['@image_key', '@label_key']
+    mode: [constant, constant]
+    spatial_size: '@patch_size'
+  - _target_: IdentityD
+    keys: ['@label_key']
+  - _target_: RandCropByLabelClassesd
+    keys: ['@image_key', '@label_key']
+    label_key: '@label_key'
+    num_classes: '@output_classes'
+    num_samples: '@num_patches_per_image'
+    spatial_size: '@patch_size'
+    warn: false
+  - _target_: IdentityD
+    keys: ['@image_key']
+  - _target_: RandFlipd
+    keys: ['@image_key', '@label_key']
+    prob: 0.2
+    spatial_axis: 0
+  - _target_: RandFlipd
+    keys: ['@image_key', '@label_key']
+    prob: 0.2
+    spatial_axis: 1
+  - _target_: RandFlipd
+    keys: ['@image_key', '@label_key']
+    prob: 0.2
+    spatial_axis: 2
+  - _target_: RandRotate90d
+    keys: ['@image_key', '@label_key']
+    max_k: 3
+    prob: 0.2
+  - _target_: RandScaleIntensityd
+    factors: 0.1
+    keys: ['@image_key']
+    prob: 0.1
+  - _target_: RandShiftIntensityd
+    keys: ['@image_key']
+    offsets: 0.1
+    prob: 0.1
+  verbose: false

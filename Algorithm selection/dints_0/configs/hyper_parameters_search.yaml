@@ -1,0 +1,47 @@
+_meta_: {}
+bundle_root: /work_dir/dints_0
+searching:
+  amp: true
+  arch_optimizer_a:
+    _target_: torch.optim.Adam
+    betas: [0.5, 0.999]
+    lr: '@searching#learning_rate_arch'
+    weight_decay: 0
+  arch_optimizer_c:
+    _target_: torch.optim.Adam
+    betas: [0.5, 0.999]
+    lr: '@searching#learning_rate_arch'
+    weight_decay: 0
+  arch_path: $@bundle_root + '/arch_ram' + str(@searching#ram_cost_factor) + '_fold'
+    + str(@fold)
+  cache_rate: 1
+  determ: false
+  input_channels: 1
+  learning_rate: 0.025
+  learning_rate_arch: 0.001
+  loss: {_target_: DiceFocalLoss, batch: true, include_background: true, sigmoid: $not
+      @searching#softmax, smooth_dr: 1.0e-05, smooth_nr: 1.0e-05, softmax: $@searching#softmax,
+    squared_pred: true, to_onehot_y: $@searching#softmax}
+  lr_scheduler: {_target_: torch.optim.lr_scheduler.StepLR, gamma: 0.5, step_size: '$max(int(float(@searching#num_epochs
+      - @searching#num_warmup_epochs) * 0.4), 1)'}
+  num_cache_workers: 8
+  num_epochs: 1000
+  num_epochs_per_validation: 20
+  num_images_per_batch: 2
+  num_patches_per_image: 1
+  num_sw_batch_size: 2
+  num_warmup_epochs: 500
+  num_workers: 6
+  optimizer: {_target_: torch.optim.SGD, lr: '@searching#learning_rate', momentum: 0.9,
+    weight_decay: 4.0e-05}
+  output_classes: 12
+  overlap_ratio: 0.625
+  patch_size: [96, 96, 32]
+  patch_size_valid: [96, 96, 32]
+  ram_cost_factor: 0.8
+  resample_to_spacing: [1.0, 1.0, 1.0]
+  softmax: true
+  sw_input_on_cpu: false
+  train_cache_rate: $@searching#cache_rate
+  transforms: {resample_to_spacing: $@searching#resample_to_spacing}
+  validate_cache_rate: $@searching#cache_rate

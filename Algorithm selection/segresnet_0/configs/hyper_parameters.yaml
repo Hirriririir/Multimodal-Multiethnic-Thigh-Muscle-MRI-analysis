@@ -1,0 +1,68 @@
+_meta_: {}
+modality: mri
+data_file_base_dir: /Data
+data_list_file_path: /work_dir/auto3dseg.json
+input_channels: 1
+output_classes: 12
+class_names: null
+class_index: null
+debug: false
+quick: false
+channels_last: true
+validate_final_original_res: false
+calc_val_loss: false
+auto_scale_roi: true
+auto_scale_batch: false
+auto_scale_filters: false
+roi_size: [496, 496, 15]
+crop_mode: rand
+normalize_mode: meanstd
+amp: true
+bundle_root: /work_dir/segresnet_0
+ckpt_path: $@bundle_root + '/model'
+log_output_file: null
+ckpt_save: true
+cache_rate: null
+cache_class_indices: null
+early_stopping_fraction: 0.001
+determ: false
+fold: 0
+learning_rate: 0.0002
+batch_size: 1
+num_images_per_batch: 1
+num_epochs: 300
+num_warmup_epochs: 3
+sigmoid: false
+resample: false
+resample_resolution: [0.742200028865786, 0.7422000377806272, 23.999738693237305]
+intensity_bounds: [173.66656895101505, 3272.910755018248]
+num_epochs_per_validation: null
+num_epochs_per_saving: 1
+num_workers: 4
+num_steps_per_image: null
+loss: {_target_: DiceCELoss, include_background: true, squared_pred: true, smooth_nr: 0,
+  smooth_dr: 1.0e-05, softmax: $not @sigmoid, sigmoid: $@sigmoid, to_onehot_y: $not
+    @sigmoid}
+optimizer: {_target_: torch.optim.AdamW, lr: '@learning_rate', weight_decay: 1.0e-05}
+network:
+  _target_: SegResNetDS
+  init_filters: 32
+  blocks_down: [1, 2, 2, 4, 4]
+  norm: INSTANCE_NVFUSER
+  in_channels: '@input_channels'
+  out_channels: '@output_classes'
+  dsdepth: 4
+finetune: {enabled: false, ckpt_name: $@bundle_root + '/model/model.pt'}
+validate: {enabled: false, ckpt_name: $@bundle_root + '/model/model.pt', output_path: $@bundle_root
+    + '/prediction_validation', save_mask: false, invert: true}
+infer: {enabled: false, ckpt_name: $@bundle_root + '/model/model.pt', output_path: $@bundle_root
+    + '/prediction_' + @infer#data_list_key, data_list_key: testing}
+anisotropic_scales: true
+spacing_median: [0.742200028865786, 0.7422000377806272, 24.000032615970706]
+spacing_lower: [0.7421999763037873, 0.7421999896456933, 23.999129266738894]
+spacing_upper: [0.9375000347992332, 0.9375000102417069, 26.00056489944458]
+image_size_mm_median: [380.0, 380.0, 383.0]
+image_size_mm_90: [459, 459, 384]
+image_size: [618, 618, 16]
+warmup_epochs: 3
+multigpu: false

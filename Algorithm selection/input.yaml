@@ -1,0 +1,4 @@
+modality: MRI
+datalist: /work_dir/auto3dseg.json
+dataroot: ./Data
+multigpu: true

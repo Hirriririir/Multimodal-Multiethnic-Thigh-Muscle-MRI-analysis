@@ -1,0 +1,41 @@
+_meta_: {}
+amp: true
+bundle_root: /work_dir/segresnet2d_0
+cache_rate: 1
+ckpt_path: $@bundle_root + '/model_fold' + str(@fold)
+data_file_base_dir: /Data
+data_list_file_path: /work_dir/auto3dseg.json
+determ: false
+finetune: {activate: false, pretrained_ckpt_name: $@bundle_root + '/model_fold' +
+    str(@fold) + '/best_metric_model.pt'}
+fold: 0
+infer: {ckpt_name: $@bundle_root + '/model_fold' + str(@fold) + '/best_metric_model.pt',
+  data_list_key: testing, fast: false, output_path: $@bundle_root + '/prediction_'
+    + @infer#data_list_key}
+input_channels: 1
+learning_rate: 0.2
+loss: {_target_: DiceFocalLoss, batch: true, include_background: true, sigmoid: $not
+    @softmax, smooth_dr: 1.0e-05, smooth_nr: 1.0e-05, softmax: $@softmax, squared_pred: true,
+  to_onehot_y: $@softmax}
+lr_scheduler: {_target_: torch.optim.lr_scheduler.StepLR, gamma: 0.5, optimizer: $@optimizer,
+  step_size: '$max(@num_epochs // 5, 1)'}
+num_adjacent_slices: 1
+num_cache_workers: 8
+num_epochs: 2000
+num_epochs_per_validation: 20
+num_images_per_batch: 18
+num_patches_per_image: 2
+num_sw_batch_size: 18
+num_workers: 18
+optimizer: {_target_: torch.optim.SGD, lr: '@learning_rate', momentum: 0.9, weight_decay: 4.0e-05}
+output_classes: 12
+overlap_ratio: 0.625
+patch_size: [320, 320, $@num_adjacent_slices * 2 + 1]
+patch_size_valid: [320, 320, $@num_adjacent_slices * 2 + 1]
+resample_to_spacing: [0.742200028865786, 0.7422000377806272, -1.0]
+softmax: true
+sw_input_on_cpu: false
+train_cache_rate: $@cache_rate
+validate: {ckpt_name: $@bundle_root + '/model_fold' + str(@fold) + '/best_metric_model.pt',
+  output_path: $@bundle_root + '/prediction_fold' + str(@fold), save_mask: true}
+validate_cache_rate: $@cache_rate

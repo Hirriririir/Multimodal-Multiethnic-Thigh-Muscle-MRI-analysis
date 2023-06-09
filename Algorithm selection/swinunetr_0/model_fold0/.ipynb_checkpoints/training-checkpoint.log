@@ -1,0 +1,12 @@
+2023-05-06 11:51:36,028 - DEBUG - [info] number of GPUs: 1
+2023-05-06 11:51:36,029 - DEBUG - [info] world_size: 1
+2023-05-06 11:51:36,032 - DEBUG - train_files: 219
+2023-05-06 11:51:36,033 - DEBUG - val_files: 55
+2023-05-06 11:51:38,547 - DEBUG - [info] use pretrained weights
+2023-05-06 11:51:38,550 - DEBUG - num_epochs: 200
+2023-05-06 11:51:38,551 - DEBUG - num_epochs_per_validation: 2
+2023-05-06 11:51:38,551 - DEBUG - [info] training from scratch
+2023-05-06 11:51:38,551 - DEBUG - [info] amp enabled
+2023-05-06 11:51:38,555 - DEBUG - ----------
+2023-05-06 11:51:38,555 - DEBUG - epoch 1/200
+2023-05-06 11:51:38,555 - DEBUG - learning rate is set to 0.0
