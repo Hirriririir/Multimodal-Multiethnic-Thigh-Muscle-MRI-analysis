@@ -12,10 +12,10 @@ A thigh muscle segmentation tool trained using a multimodal and multiethnic MRI 
 - Targets 11 thigh muscles: BL - Biceps Femoris Long Head; BB - Biceps Femoris Short Head; ST - Semitendinosus; SM - Semimembranosus; AM - Adductor Magnus; VI - Vastus Intermedius; VL - Vastus Lateralis; VM - Vastus Medialis; RF - Rectus Femoris; GR - Gracilis; SA - Sartorius.
 
 
-## Model's performance in testing MRIs
+## Performance of the model on testing MRIs
 ![image](./Figs/demo.png)
 
-##  MRI data 
+##  MRI data download
 > You can download the Chinese and Finnish data at the "Releases" section, and the Germany data from this [link](https://osf.io/svwa7/?view_only=c2c980c17b3a40fca35d088a3cdd83e2). 
 - **Han Chinese Thigh MRIs** (HuashanMyo): 262 MRIs (LGMDR1, LGMDR2, BMD, DM1, Control)
 - **Finnish Thigh MRIs** ([Folkhälsan Research Center](https://www.folkhalsan.fi/en/knowledge/research/genetics/group-udd/)): 54 MRIs (TMD, IBM, DM2, HMERF)
