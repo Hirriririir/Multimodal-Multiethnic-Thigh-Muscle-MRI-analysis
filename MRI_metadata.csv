@@ -1,0 +1,113 @@
+﻿Dataset,MRI sample,Phenotype,Ethnicity,Gender,Age,FAT (IDEAL),WATER (IDEAL),T1,T2,STIR
+HuashanMyo,THIGH_001,LGMDR1,Han Chinese,M,29,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_002,Control,Han Chinese,M,32,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_003,LGMDR2,Han Chinese,F,31,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_004,LGMDR2,Han Chinese,M,42,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_005,LGMDR2,Han Chinese,M,56,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_006,LGMDR1,Han Chinese,M,23,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_007,LGMDR1,Han Chinese,M,50,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_008,Control,Han Chinese,M,25,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_009,LGMDR2,Han Chinese,F,47,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_010,LGMDR2,Han Chinese,F,32,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_011,Control,Han Chinese,M,10,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_012,LGMDR2,Han Chinese,F,57,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_013,Control,Han Chinese,M,32,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_014,Control,Han Chinese,M,37,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_015,LGMDR1,Han Chinese,M,24,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_016,LGMDR2,Han Chinese,M,24,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_017,Control,Han Chinese,F,23,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_018,LGMDR2,Han Chinese,M,27,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_019,Control,Han Chinese,M,11,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_020,LGMDR1,Han Chinese,M,45,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_021,LGMDR2,Han Chinese,M,21,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_022,LGMDR2,Han Chinese,F,35,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_023,LGMDR2,Han Chinese,F,42,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_024,LGMDR1,Han Chinese,M,17,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_025,LGMDR2,Han Chinese,M,34,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_026,LGMDR2,Han Chinese,M,24,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_027,Control,Han Chinese,F,22,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_028,LGMDR2,Han Chinese,F,37,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_029,Control,Han Chinese,M,24,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_030,LGMDR2,Han Chinese,M,25,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_031,Control,Han Chinese,F,23,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_032,Control,Han Chinese,F,56,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_033,Control,Han Chinese,M,32,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_034,LGMDR2,Han Chinese,M,47,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_035,LGMDR2,Han Chinese,M,17,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_036,LGMDR2,Han Chinese,M,34,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_037,LGMDR1,Han Chinese,F,35,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_038,LGMDR2,Han Chinese,F,46,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_039,LGMDR1,Han Chinese,F,39,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_040,LGMDR1,Han Chinese,M,28,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_041,LGMDR1,Han Chinese,M,44,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_042,LGMDR2,Han Chinese,M,39,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_043,Control,Han Chinese,M,22,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_044,LGMDR2,Han Chinese,M,31,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_045,Control,Han Chinese,F,51,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_046,LGMDR2,Han Chinese,M,36,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_047,Control,Han Chinese,F,23,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_048,LGMDR2,Han Chinese,M,23,✓,✓,✓,NA,NA
+HuashanMyo,THIGH_049,Control,Han Chinese,M,25,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_050,LGMDR2,Han Chinese,M,35,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_051,Control,Han Chinese,F,25,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_052,LGMDR1,Han Chinese,F,48,✓,✓,✓,✓,✓
+HuashanMyo,THIGH_053,LGMDR2,Han Chinese,M,23,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_054,LGMDR2,Han Chinese,M,16,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_055,LGMDR10,Han Chinese,M,25,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_056,LGMDR1,Han Chinese,M,13,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_057,LGMDR1,Han Chinese,M,16,✓,✓,✓,NA,NA
+HuashanMyo,THIGH_058,LGMDR2,Han Chinese,M,31,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_059,LGMDR2,Han Chinese,M,33,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_060,LGMDR1,Han Chinese,M,24,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_061,LGMDR1,Han Chinese,M,27,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_062,LGMDR2,Han Chinese,M,39,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_063,LGMDR2,Han Chinese,F,46,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_064,LGMDR2,Han Chinese,F,49,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_065,BMD,Han Chinese,M,17,✓,✓,✓,✓,NA
+HuashanMyo,THIGH_066,DM1,Han Chinese,M,53,✓,✓,✓,✓,NA
+Folkhälsan,THIGH_101,DM2,Finns,F,,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_102,DM2,Finns,M,,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_103,DM2,Finns,M,,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_104,DM2,Finns,M,52,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_105,DM2,Finns,M,58,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_106,DM2,Finns,M,54,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_107,DM2,Finns,F,37,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_108,DM2,Finns,N,64,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_109,DM2,Finns,F,50,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_110,IBM,Finns,M,>60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_111,IBM,Finns,F,>60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_112,IBM,Finns,M,>60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_113,IBM,Finns,F,>60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_114,IBM,Finns,M,>60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_115,IBM,Finns,F,>60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_116,IBM,Finns,M,>60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_125,TMD,Finns,M,50-60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_123,TMD,Finns,F,50-60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_121,TMD,Finns,M,50-60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_124,TMD,Finns,F,>60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_122,TMD,Finns,M,50-60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_120,TMD,Finns,F,50-60,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_117,TMD,Finns,F,58,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_118,TMD,Finns,M,57,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_119,TMD,Finns,M,54,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_126,HMERF,Finns,F,70,NA,NA,✓,✓,✓
+Folkhälsan,THIGH_127,HMERF,Finns,F,63,NA,NA,✓,✓,✓
+MyoSegmenTUM,HV001,Control,Germans,M,30,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV002,Control,Germans,M,25,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV003,Control,Germans,M,21,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV004,Control,Germans,M,32,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV005,Control,Germans,M,48,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV006,Control,Germans,M,26,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV007,Control,Germans,M,22,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV008,Control,Germans,M,25,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV009,Control,Germans,M,27,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV010,Control,Germans,F,24,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV011,Control,Germans,M,20,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV012,Control,Germans,F,39,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV013,Control,Germans,F,25,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV014,Control,Germans,M,31,✓,✓,NA,NA,NA
+MyoSegmenTUM,HV015,Control,Germans,M,41,✓,✓,NA,NA,NA
+MyoSegmenTUM,P001,DM2,Germans,M,52,✓,✓,NA,NA,NA
+MyoSegmenTUM,P002,LGMDR1,Germans,F,52,✓,✓,NA,NA,NA
+MyoSegmenTUM,P003,ALS,Germans,M,41,✓,✓,NA,NA,NA
+MyoSegmenTUM,P004,DM2,Germans,F,66,✓,✓,NA,NA,NA
