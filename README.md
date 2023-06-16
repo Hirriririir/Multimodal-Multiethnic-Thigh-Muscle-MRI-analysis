@@ -13,7 +13,7 @@
 
 
 ## Performance of the model on testing MRIs
-![image](./Figs/Demo.png)
+![image](./Figs/demo.png)
 
 ##  MRI data 
 > You can download the anonymized Chinese and Finnish MRI data for your research at the "[Releases](https://github.com/Hirriririir/Multimodal-Multiethnic-Thigh-Muscle-MRI-analysis/releases/tag/1.0)" section, and the Germany data from this [link](https://osf.io/svwa7/?view_only=c2c980c17b3a40fca35d088a3cdd83e2). 
