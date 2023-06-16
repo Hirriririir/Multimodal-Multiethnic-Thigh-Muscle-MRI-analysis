@@ -13,14 +13,14 @@
 
 
 ## Performance of the model on testing MRIs
-![image](./Figs/demo.png)
+![image](./Figs/Demo.png)
 
 ##  MRI data 
-> You can download the Chinese and Finnish data at the "Releases" section, and the Germany data from this [link](https://osf.io/svwa7/?view_only=c2c980c17b3a40fca35d088a3cdd83e2). 
+> You can download the anonymized Chinese and Finnish MRI data for your research at the "[Releases](https://github.com/Hirriririir/Multimodal-Multiethnic-Thigh-Muscle-MRI-analysis/releases/tag/1.0)" section, and the Germany data from this [link](https://osf.io/svwa7/?view_only=c2c980c17b3a40fca35d088a3cdd83e2). 
 - **Han Chinese Thigh MRIs** (HuashanMyo): 262 MRIs (LGMDR1, LGMDR2, BMD, DM1, Control)
 - **Finnish Thigh MRIs** ([Folkhälsan Research Center](https://www.folkhalsan.fi/en/knowledge/research/genetics/group-udd/)): 54 MRIs (TMD, IBM, DM2, HMERF)
 - **Germany Thigh MRIs** ([MyoSegmenTUM](https://dx.plos.org/10.1371/journal.pone.0198200)): 38 MRIs (DM2, LGMDR1, ALS, Control)
-- The Belgian BMD IDEAL In-phase MRI samples used for model demo were download from [LHuysmans/3d-muscle-segmentation](https://github.com/LHuysmans/3d-muscle-segmentation/tree/main/data/BMD)
+- The **Belgian BMD IDEAL In-phase MRI samples** used for model demo were download from [LHuysmans/3d-muscle-segmentation](https://github.com/LHuysmans/3d-muscle-segmentation/tree/main/data/BMD)
 
 
 ## Model Implementation (MONAI label)
