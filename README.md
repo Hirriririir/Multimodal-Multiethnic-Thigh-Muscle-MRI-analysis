@@ -6,7 +6,7 @@
 
 ## Model description
 
-- A 3D segmentation model based on [SegResNet](https://github.com/Project-MONAI/tutorials/tree/main/auto3dseg)
+- A 3D segmentation model based on [SegResNet](https://docs.monai.io/en/stable/_modules/monai/networks/nets/segresnet.html)
 - Trained using multi-ethnic thigh MRIs from both myopathy patients and healthy controls (metadata available in the repository)
 - Suitable for training on any one of the multimodal MRI series, including IDEAL fat, IDEAL water, T1, T2, and STIR
 - Targets 11 thigh muscles: BL - Biceps Femoris Long Head; BB - Biceps Femoris Short Head; ST - Semitendinosus; SM - Semimembranosus; AM - Adductor Magnus; VI - Vastus Intermedius; VL - Vastus Lateralis; VM - Vastus Medialis; RF - Rectus Femoris; GR - Gracilis; SA - Sartorius.
@@ -20,7 +20,7 @@
 - **Han Chinese Thigh MRIs** (HuashanMyo): 262 MRIs (LGMDR1, LGMDR2, BMD, DM1, Control)
 - **Finnish Thigh MRIs** ([Folkhälsan Research Center](https://www.folkhalsan.fi/en/knowledge/research/genetics/group-udd/)): 54 MRIs (TMD, IBM, DM2, HMERF)
 - **Germany Thigh MRIs** ([MyoSegmenTUM](https://dx.plos.org/10.1371/journal.pone.0198200)): 38 MRIs (DM2, LGMDR1, ALS, Control)
-- The **Belgian BMD IDEAL In-phase MRI samples** used for model demo were download from [LHuysmans/3d-muscle-segmentation](https://github.com/LHuysmans/3d-muscle-segmentation/tree/main/data/BMD)
+- The **Belgian BMD IDEAL In-phase MRI samples** used for the model demo were download from [LHuysmans/3d-muscle-segmentation](https://github.com/LHuysmans/3d-muscle-segmentation/tree/main/data/BMD)
 
 
 ## Model Implementation (MONAI label)
