@@ -36,7 +36,7 @@ pip install "monai-weekly[all]" "monailabel-weekly"
 
 3. Start "OHIF viewer" or "3D slicer" to run the model on your own MRI data. Press the "Auto segmentation" button to start.
 
-![image](https://github.com/Hirriririir/Multimodel-Multiethnic-Thigh-Muslce-MRI-anaysis/assets/74590379/11d3ea27-8076-4d5f-9451-f1ed6467fe20)
+![image](./Figs/Application.png)
 
 ## Acknowledgement 
 
