@@ -47,7 +47,8 @@ monailabel start_server --app apps/radiology --studies datasets/Thigh_muscles --
 
 ![image](./Figs/OHIF.gif)
 
-![image2](./Figs/3D slicer.gif)
+![image](./Figs/3D_slicer.gif)
+
 
 
 ## Acknowledgement 
