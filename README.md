@@ -16,7 +16,7 @@
 ![image](./Figs/demo.png)
 
 ##  MRI data 
-> You can download the anonymized Chinese and Finnish MRI data for your research at the "[Releases](https://github.com/Hirriririir/Multimodal-Multiethnic-Thigh-Muscle-MRI-analysis/releases/tag/1.0)" section, and the Germany data from this [link](https://osf.io/svwa7/?view_only=c2c980c17b3a40fca35d088a3cdd83e2). 
+> You can download the anonymized Chinese and Finns MRI data for your research at the "[Releases](https://github.com/Hirriririir/Multimodal-Multiethnic-Thigh-Muscle-MRI-analysis/releases/tag/1.0)" section, and the Germany data from this [link](https://osf.io/svwa7/?view_only=c2c980c17b3a40fca35d088a3cdd83e2). 
 - **Han Chinese Thigh MRIs** (HuashanMyo): 262 MRIs (LGMDR1, LGMDR2, BMD, DM1, Control)
 - **Finnish Thigh MRIs** ([Folkhälsan Research Center](https://www.folkhalsan.fi/en/knowledge/research/genetics/group-udd/)): 54 MRIs (TMD, IBM, DM2, HMERF)
 - **Germany Thigh MRIs** ([MyoSegmenTUM](https://dx.plos.org/10.1371/journal.pone.0198200)): 38 MRIs (DM2, LGMDR1, ALS, Control)
@@ -33,10 +33,22 @@ pip install "monai-weekly[all]" "monailabel-weekly"
 
 2. Then, copy the contents (including scripts and the model) of the "[MONAI label implementation](https://drive.google.com/drive/folders/19M_ZUCMFM0fwE_Z8Hn-sD3dFMr30v59u?usp=sharing)" folder into the [MONAI label](https://monai.io/label.html)'s config file located at "./apps/radiology".
 
+3. Start MONAI Label server
+```
+# OHIF
+monailabel start_server --app apps/radiology --studies http://127.0.0.1:8042/dicom-web --conf models segmentation_thighmuscles
 
-3. Start "OHIF viewer" or "3D slicer" to run the model on your own MRI data. Press the "Auto segmentation" button to start.
+# 3D Slicer
+monailabel start_server --app apps/radiology --studies datasets/Thigh_muscles --conf models segmentation_muscle --conf skip_trainers true
 
-![image](./Figs/Application.png)
+```
+
+4. Start "OHIF viewer" or "3D slicer" to run the model on your own MRI data. Press the "Auto segmentation" button to start.
+
+![image](./Figs/OHIF.gif)
+
+![image2](./Figs/3D slicer.gif)
+
 
 ## Acknowledgement 
 
